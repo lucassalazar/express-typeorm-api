@@ -2,9 +2,9 @@ node_modules/
 .env
 build/
 
-uploads/*/ludwig.jpg
-uploads/*/fyodor.jpg
-uploads/*/borges.jpg
-uploads/*/human_action.jpg
-uploads/*/karamazov_brothers.jpg
-uploads/*/library_of_babel.jpg
+!uploads/*/ludwig.jpg
+!uploads/*/fyodor.jpg
+!uploads/*/borges.jpg
+!uploads/*/human_action.jpg
+!uploads/*/karamazov_brothers.jpg
+!uploads/*/library_of_babel.jpg
