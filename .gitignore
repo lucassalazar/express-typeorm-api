@@ -1,9 +1,9 @@
-node_modules
+node_modules/
 .env
 
-uploads/authors/ludwig.jpg
-uploads/authors/fyodor.jpg
-uploads/authors/borges.jpg
-uploads/books/human_action.jpg
-uploads/books/karamazov_brothers.jpg
-uploads/books/library_of_babel.jpg
+uploads/*/ludwig.jpg
+uploads/*/fyodor.jpg
+uploads/*/borges.jpg
+uploads/*/human_action.jpg
+uploads/*/karamazov_brothers.jpg
+uploads/*/library_of_babel.jpg
