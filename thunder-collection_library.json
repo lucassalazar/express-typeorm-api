@@ -1,0 +1,376 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "library",
+    "dateExported": "2023-11-28T08:44:31.844Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ad11a1f9-6adf-41eb-9b99-b80ff0186954",
+            "name": "health",
+            "containerId": "",
+            "created": "2023-11-24T15:43:51.331Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "authors",
+            "containerId": "",
+            "created": "2023-11-24T15:44:59.658Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "books",
+            "containerId": "",
+            "created": "2023-11-24T21:57:11.392Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "60f19237-62f6-4c05-9266-f1e79f4a81b0",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-11-28T03:12:17.758Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f2b6eb74-9268-4da0-9809-3a65746252d5",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "ad11a1f9-6adf-41eb-9b99-b80ff0186954",
+            "name": "Get / health",
+            "url": "http://localhost:3001/health",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-24T15:44:30.251Z",
+            "modified": "2023-11-24T20:03:39.210Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2817157e-8001-4db6-a95d-b3a2a8a02eaa",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Get /authors",
+            "url": "http://localhost:3001/authors",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-24T15:45:29.772Z",
+            "modified": "2023-11-24T15:47:09.424Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aac434e9-93f8-4516-a084-bdae5eaf9b6c",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Get /authors?pageSize={}&page={}",
+            "url": "http://localhost:3001/authors?pageSize=3&page=1",
+            "method": "GET",
+            "sortNum": 32500,
+            "created": "2023-11-24T15:46:44.273Z",
+            "modified": "2023-11-24T16:23:47.151Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pageSize",
+                    "value": "3",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4f588a71-b78e-4daa-be4b-8ea5c9ac150e",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Get /authors/:id",
+            "url": "http://localhost:3001/authors/1",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-11-24T15:45:10.029Z",
+            "modified": "2023-11-28T08:42:42.079Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "24fdd774-d72d-4ae8-bb23-e77430ab93fc",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Post /authors",
+            "url": "http://localhost:3001/authors",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-11-24T16:57:31.539Z",
+            "modified": "2023-11-28T08:42:37.084Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "{{#name}} {{#name}}"
+                    },
+                    {
+                        "name": "email",
+                        "value": "{{#email}}"
+                    },
+                    {
+                        "name": "bio",
+                        "value": "This is an author"
+                    }
+                ],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ddb636d-cfd1-4e08-ab88-c0442d280f37",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Put /authors/:id",
+            "url": "http://localhost:3001/authors/4",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-11-24T19:14:52.951Z",
+            "modified": "2023-11-28T08:42:31.812Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"{{#name}} {{#name}}\",\n  \"email\": \"{{#email}}\",\n  \"bio\": \"This is an updated bio\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1970a380-3cf1-4514-b50f-6b497953d5d6",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "4957ef13-21f4-411b-9957-ccbfa1d85ab2",
+            "name": "Delete /authors/:id",
+            "url": "http://localhost:3001/authors/4",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-11-24T19:28:06.037Z",
+            "modified": "2023-11-28T08:42:13.401Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ea538ca6-f48a-43a7-bc6b-44c6b1c725dd",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Get /books",
+            "url": "http://localhost:3001/books",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-11-24T21:57:19.863Z",
+            "modified": "2023-11-25T22:19:20.283Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5ac7103b-dedd-40f4-9902-a7fdb41883b9",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Get /books?pageSize={}&page={}",
+            "url": "http://localhost:3001/books?pageSize=1&page=1",
+            "method": "GET",
+            "sortNum": 82500,
+            "created": "2023-11-27T18:32:56.253Z",
+            "modified": "2023-11-27T18:34:10.687Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "pageSize",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1c55635c-66b0-4c88-8d53-813be4f7bdf9",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Get /books/:id",
+            "url": "http://localhost:3001/books/6",
+            "method": "GET",
+            "sortNum": 85000,
+            "created": "2023-11-27T18:36:43.662Z",
+            "modified": "2023-11-28T08:42:22.625Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33bad536-6375-46ea-9574-7ecd66daea1c",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Post /books",
+            "url": "http://localhost:3001/books",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-11-27T18:54:37.919Z",
+            "modified": "2023-11-28T08:42:03.741Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "{{#string}}"
+                    },
+                    {
+                        "name": "description",
+                        "value": "This is a book"
+                    },
+                    {
+                        "name": "price",
+                        "value": "19.55"
+                    },
+                    {
+                        "name": "authorId",
+                        "value": "1"
+                    },
+                    {
+                        "name": "category",
+                        "value": "{{#string}}"
+                    }
+                ],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e794477-5887-47f9-befa-664657750c0d",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Put /books/:id",
+            "url": "http://localhost:3001/books/4",
+            "method": "PUT",
+            "sortNum": 102500,
+            "created": "2023-11-27T19:08:19.667Z",
+            "modified": "2023-11-28T08:41:41.474Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"{{#string}}\",\n  \"authorId\": 1,\n  \"price\": 20.05,\n  \"description\": \"This is an updated book\",\n  \"category\": \"Fiction\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c17ad12-cf45-4e50-8882-3635a8edfd02",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "f75dcdd8-750e-4754-b9e6-8819fa9411ed",
+            "name": "Delete /books/:id",
+            "url": "http://localhost:3001/books/4",
+            "method": "DELETE",
+            "sortNum": 105000,
+            "created": "2023-11-27T19:27:38.084Z",
+            "modified": "2023-11-28T08:41:56.801Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer {{JWT}}"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9ef54396-2c70-4f5a-a80f-a692eab7b38d",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "60f19237-62f6-4c05-9266-f1e79f4a81b0",
+            "name": "Post /auth/register",
+            "url": "http://localhost:3001/auth/register",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-11-28T03:12:38.278Z",
+            "modified": "2023-11-28T08:43:58.835Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"{{#name}}\",\n  \"email\": \"{{#email}}\",\n  \"password\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "69fc3b8e-a223-498a-b678-99cb82fd9a26",
+            "colId": "6c5645d1-9e2d-42b6-900d-d88f068c331e",
+            "containerId": "60f19237-62f6-4c05-9266-f1e79f4a81b0",
+            "name": "Post /auth/login",
+            "url": "http://localhost:3001/auth/login",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-11-28T03:51:31.912Z",
+            "modified": "2023-11-28T08:44:25.534Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"{{#email}}\",\n  \"password\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
