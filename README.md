@@ -30,17 +30,17 @@ A "Library" REST API implementation built with [Express.js](http://expressjs.com
 
 - `GET /books`: Get all books
 - `GET /books/:id`: Get a book by ID
-- `POST /books`: Create a new book (requires authentication)
-- `PUT /books/:id`: Update a book by ID (requires authentication)
-- `DELETE /books/:id`: Delete a book by ID (requires authentication)
+- `POST /books`: Create a new book
+- `PUT /books/:id`: Update a book by ID
+- `DELETE /books/:id`: Delete a book by ID
 
 ### Authors
 
 - `GET /authors`: Get all authors
 - `GET /authors/:id`: Get an author by ID
-- `POST /authors`: Create a new author (requires authentication)
-- `PUT /authors/:id`: Update an author by ID (requires authentication)
-- `DELETE /authors/:id`: Delete an author by ID (requires authentication)
+- `POST /authors`: Create a new author
+- `PUT /authors/:id`: Update an author by ID
+- `DELETE /authors/:id`: Delete an author by ID
 
 ### Authentication
 
