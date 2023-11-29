@@ -1,4 +1,12 @@
-A "Library" REST API implementation built with [Express.js](http://expressjs.com) and [TypeORM](https://typeorm.io/).
+A "Library" REST API implementation built with:
+
+- Node.js
+- TypeScript
+- MySQL
+- TypeORM
+- Docker
+- Class Validator
+- JWT
 
 ## Features
 
@@ -14,15 +22,6 @@ A "Library" REST API implementation built with [Express.js](http://expressjs.com
 2. npm install
 3. Run migrations `npm run migration:run`
 4. Start the server `npm run dev`
-
-## Technologies
-
-- Node.js
-- TypeScript
-- MySQL
-- TypeORM
-- Class Validator
-- JWT
 
 ## API endpoints
 
