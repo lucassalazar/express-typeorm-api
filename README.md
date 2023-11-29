@@ -1,3 +1,5 @@
+## Description
+
 A "Library" REST API implementation built with:
 
 - [Node.js](https://nodejs.org/en)
