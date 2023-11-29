@@ -1,12 +1,12 @@
 A "Library" REST API implementation built with:
 
-- Node.js
-- TypeScript
-- MySQL
-- TypeORM
-- Docker
-- Class Validator
-- JWT
+- [Node.js](https://nodejs.org/en)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MySQL](https://www.mysql.com/)
+- [TypeORM](https://typeorm.io/)
+- [Docker](https://www.docker.com/)
+- [Class Validator](https://www.npmjs.com/package/class-validator)
+- [JWT](https://jwt.io/)
 
 ## Features
 
