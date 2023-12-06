@@ -20,8 +20,8 @@ A "Library" REST API implementation built with:
 
 ## Setup
 
-1. Copy the contents of `.env.example` to `.env` and update the variables
-2. npm install
+1. Copy the contents of `.env.sample` to `.env` and update the variables
+2. Install dependencies `npm install`
 3. Run migrations `npm run migration:run`
 4. Start the server `npm run dev`
 
